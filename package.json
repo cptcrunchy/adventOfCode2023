@@ -1,0 +1,15 @@
+{
+  "name": "adventofcode2019",
+  "version": "1.0.0",
+  "description": "advent of code 2019",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jason Gutierrez",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^12.12.14"
+  }
+}
