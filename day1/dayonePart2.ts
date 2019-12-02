@@ -1,4 +1,4 @@
-import fs from '../node_modules/@types/node/fs';
+import fs from 'fs';
 
 const data: string = fs.readFileSync('./day1/dayoneInput.txt','utf8')
 
