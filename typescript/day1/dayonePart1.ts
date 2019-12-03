@@ -1,6 +1,6 @@
 import fs from 'fs';
 
-const data: string = fs.readFileSync('./typescript/day1/dayoneInput.txt','utf8')
+const data: string = fs.readFileSync('./data/dayOnePuzzle.txt','utf8')
 const fuelSum = data.split(/\r?\n/)
 .map( (f:string) => Number(f))
 .filter( f => f > 0)

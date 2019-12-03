@@ -1,6 +1,6 @@
 import fs from 'fs';
 
-const data: string = fs.readFileSync('./typescript/day1/dayoneInput.txt','utf8')
+const data: string = fs.readFileSync('./data/dayOnePuzzle.txt','utf8')
 
 const calcFuel = (n: number): number => {
     const f = Math.max(Math.floor(n / 3) - 2, 0);

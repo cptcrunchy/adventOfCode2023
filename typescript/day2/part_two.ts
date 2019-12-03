@@ -2,7 +2,7 @@ import fs from 'fs';
 import { parse } from './parse';
 import { compute } from './compute';
 
-const file = fs.readFileSync('./day2/puzzle.txt','utf8');
+const file = fs.readFileSync('./data/dayTwoPuzzle.txt','utf8');
 
 const getAddress = (input: string) => {
     const arr = parse(input)
