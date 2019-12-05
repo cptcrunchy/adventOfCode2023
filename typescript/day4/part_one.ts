@@ -1,8 +1,9 @@
 const START: number = 387638;
 const END: number = 919123;
 
-const countValidPassword = (start: number, end: number): number =>{
+const countValidPassword = (start: number, end: number): number[] =>{
     let validPasswords: number = 0;
+    let validPasswords2: number = 0;
 
     for(let i = start; i <= end; i++){
         let password: number[] = i.toString().split('').map(Number);
@@ -17,10 +18,13 @@ const countValidPassword = (start: number, end: number): number =>{
         }, -1)
         
         if(!decrease){
+            // Part One Solution
             if(chunks.some(chunk => chunk >= 2)) validPasswords++;
+            // Part Two Solution
+            if(chunks.some(chunk => chunk === 2)) validPasswords2++;
         }
     }
-    return validPasswords;
+    return [validPasswords, validPasswords2];
 }
 
 countValidPassword(START, END)//?
