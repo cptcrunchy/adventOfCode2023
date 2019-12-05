@@ -1,5 +1,6 @@
-const START: number = 387638;
-const END: number = 919123;
+import fs from 'fs'
+
+const [START, END]: number[] = fs.readFileSync('./data/dayFourPuzzle.txt','utf8').split("-").map(Number);
 
 const countValidPassword = (start: number, end: number): number[] =>{
     let validPasswords: number = 0;
