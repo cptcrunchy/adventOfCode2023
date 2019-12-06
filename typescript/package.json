@@ -9,6 +9,10 @@
   "author": "Jason Gutierrez",
   "license": "ISC",
   "dependencies": {
+    "@arrows/array": "^1.2.1",
+    "@arrows/composition": "^1.2.1",
+    "@arrows/dispatch": "^1.0.2",
+    "@arrows/multimethod": "^1.1.6",
     "ts-node": "^8.5.4",
     "tsconfig-paths": "^3.9.0"
   },
