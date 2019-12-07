@@ -1,3 +1,1 @@
-import fs from 'fs';
-
-export const getPuzzle = (fileName: string): string => fs.readFileSync("./data/" + fileName + ".txt", 'utf8');
+export const getPuzzle = (readFileSync: any, fileName: string): string => readFileSync(`./data/${fileName}.txt`, 'utf8'); 

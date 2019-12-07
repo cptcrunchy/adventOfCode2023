@@ -7,22 +7,22 @@ enum OPCODES {
 	ADD = 1,
 	MULTIPLY,
 	INPUT,
-    OUTPUT,
-    JUMP_IF_TRUE,
-    JUMP_IF_FALSE,
-    LESS_THAN,
-    EQUALS,
+  OUTPUT,
+  JUMP_IF_TRUE,
+  JUMP_IF_FALSE,
+  LESS_THAN,
+  EQUALS,
 	HALT = 99,
 }
 enum Instructions {
 	ADD = 4,
 	MULTIPLY = 4,
 	INPUT = 2,
-    OUTPUT = 2,
-    JUMP_IF_TRUE = 3,
-    JUMP_IF_FALSE = 3,
-    LESS_THAN = 4,
-    EQUALS = 4,
+  OUTPUT = 2,
+  JUMP_IF_TRUE = 3,
+  JUMP_IF_FALSE = 3,
+  LESS_THAN = 4,
+  EQUALS = 4,
 }
 
 const file = fs.readFileSync('./data/dayFivePuzzle.txt','utf8');
