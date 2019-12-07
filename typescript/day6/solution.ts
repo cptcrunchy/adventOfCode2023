@@ -1,8 +1,8 @@
-import fs from 'fs';
+import { getPuzzle } from '../utils/readFile';
 import { getGraph } from './getGraph';
 import { alg , Graph }  from 'graphlib';
 
-const file = fs.readFileSync('./data/daySixPuzzle.txt','utf8');
+const file = getPuzzle("daySixPuzzle");
 const graph: Graph = getGraph(file)
 
 const countOrbits = (node: Graph): number => {
