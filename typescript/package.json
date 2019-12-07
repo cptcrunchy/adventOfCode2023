@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "advent of code 2019",
   "main": "index.js",
+  "repository": {
+    "url": "https://github.com/cptcrunchy/advent-of-code-2019.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,10 +16,13 @@
     "@arrows/composition": "^1.2.1",
     "@arrows/dispatch": "^1.0.2",
     "@arrows/multimethod": "^1.1.6",
-    "ts-node": "^8.5.4",
-    "tsconfig-paths": "^3.9.0"
+    "@dagrejs/graphlib": "^2.1.4",
+    "@types/graphlib": "^2.1.5",
+    "graphlib": "^2.1.8",
+    "ts-node": "^8.5.4"
   },
   "devDependencies": {
-    "@types/node": "^12.12.14"
+    "@types/node": "^12.12.14",
+    "typescript": "^3.7.3"
   }
 }
