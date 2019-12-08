@@ -9,6 +9,17 @@ enum COLORS {
     TRANSPARENT,
 }
 
+const ascii = (n: number) => {
+    switch (n) {
+        case COLORS.BLACK:
+            return ' ';
+        case COLORS.WHITE:
+            return '#';
+        case COLORS.TRANSPARENT:
+        default:
+            return '_';
+    }
+}
 
 const getImage = (input: string) => {
     const width = 25
@@ -35,18 +46,9 @@ const getImage = (input: string) => {
     for (let i = 0; i < mergedLayers.length; i += width) {
         let mergedPixel = mergedLayers.slice(i, i + width)
 		pixelLines.push(mergedPixel);
-	}
-
-    return ('\n' + pixelLines.map( l => l.map(n => {
-							switch (n) {
-								case COLORS.BLACK:
-									return ' ';
-								case COLORS.WHITE:
-									return '#';
-								case COLORS.TRANSPARENT:
-								default:
-									return '_';
-                            }}).join('') + '\n').join(''))
+    }
+    
+    return ('\n' + pixelLines.map( l => l.map(ascii).join('') + '\n').join(''))
                             
 }
 
