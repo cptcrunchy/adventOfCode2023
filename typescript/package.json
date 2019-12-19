@@ -16,6 +16,7 @@
   "license": "ISC",
   "dependencies": {
     "@arrows/array": "^1.2.1",
+    "@arrows/arrows": "^0.5.0",
     "@arrows/composition": "^1.2.1",
     "@arrows/dispatch": "^1.0.2",
     "@arrows/multimethod": "^1.1.6",
@@ -23,6 +24,7 @@
     "@types/graphlib": "^2.1.5",
     "dotless": "^1.0.0-beta.12",
     "graphlib": "^2.1.8",
+    "iter-tools": "^6.2.6",
     "ramda": "^0.26.1",
     "ts-node": "^8.5.4",
     "tsconfig-paths": "^3.9.0"

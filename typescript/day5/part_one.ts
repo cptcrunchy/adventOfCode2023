@@ -57,7 +57,7 @@ const OBD = (source: string, inputs: number[]): number[] => {
             break
           }
           case OPCODES.INPUT: {
-            program[program[pointer + 1]] = inputs.shift()
+            program[program[pointer + 1]] = inputs.shift() as number
             break
           }
           case OPCODES.OUTPUT: {
