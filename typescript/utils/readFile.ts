@@ -1,1 +1,0 @@
-export const getPuzzle = (readFileSync: any, fileName: string): string => readFileSync(`./data/${fileName}.txt`, 'utf8'); 
