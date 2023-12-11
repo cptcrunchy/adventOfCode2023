@@ -1,4 +1,4 @@
-import {sampleOne, sampleTwo } from "./sample";
+import {sampleOne } from "./sample";
 import puzzleInput from "./puzzle";
 
 
@@ -78,16 +78,24 @@ function partOne(data: string[]) {
 }
 
 function partTwo(data: string[]) {
-	
+	const games = formatGames(data);
+	let total: number = 0;
+	games.forEach( (game: Game) => {
+		const redMax = Math.max(...game.cubes.map(cube => cube.R));
+		const greenMax = Math.max(...game.cubes.map(cube => cube.G));
+		const blueMax = Math.max(...game.cubes.map(cube => cube.B));
+		total += redMax * greenMax * blueMax;
+	});
+	return total;
 }
 
 export const load = () => {
 	const lines = puzzleInput.split('\n');
 	const result = partOne(lines);
-	//const result2 = partTwo(lines);
-	console.log(result);
+	const result2 = partTwo(lines);
+	console.log(result2);
 	//console.log(result2);
 
-	return { result };
+	return { result, result2 };
 }
 
